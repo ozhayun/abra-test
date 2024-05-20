@@ -1,0 +1,79 @@
+# General
+.DS_Store
+*.log
+*.cache
+*.bak
+*.tmp
+*.swp
+*.lock
+
+# Node modules and build outputs
+frontend/node_modules/
+frontend/build/
+backend/bin/
+backend/obj/
+
+# IDE and editor folders
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Operating system generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Logs and databases
+*.ldf
+*.mdf
+*.sqlite
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# TypeScript compiled files
+*.tsbuildinfo
+
+# JavaScript & Map files
+*.map.js
+
+# Coverage directories
+coverage/
+*.nyc_output
+
+# Microsoft Visual Studio cache files
+.vs/
+# Uncomment if you have tasks that create the project's static files in wwwroot
+#wwwroot/
+
+# MSTest, NUnit, XUnit test results
+/TestResults/
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# Build Results of an MSBuild Project
+[Bb]uild[Ll]og.*
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# StyleCop
+StyleCopReport.xml
+
+# Skip publishing temporary files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.nupkg
+*.nuget.props
+*.nuget.targets
