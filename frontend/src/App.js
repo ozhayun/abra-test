@@ -14,14 +14,16 @@ function App() {
         setPets(res.data)
       })
   }, [])
+
   const handleCreatePet = (newPet) => {
     console.log("NewPet in App.jxs", newPet)
     axios.post('/api/pet', newPet)
-      // .then(res => {
-      //   console.log(res.data);
-      // })
+      .then(res => {
+        setPets([...pets], res.data);
+      })
       .catch(error => console.log("Error while creating new pet", error));
   }
+
   return (
     <BrowserRouter>
       <Routes>

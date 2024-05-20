@@ -23,6 +23,14 @@ const CreatePet = ({ handleCreatePet }) => {
         }
 
         handleCreatePet(newPet);
+        resetValues(event);
+    }
+
+    const resetValues = (event) => {
+        event.target.reset()
+        setType('')
+        setColor('#aabbcc')
+
     }
 
     return (
