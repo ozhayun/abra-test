@@ -7,9 +7,11 @@ import { GetTime } from '../Service/GetTime.js';
 
 const CreatePet = ({ handleCreatePet }) => {
     const formRef = useRef(null);
+
     const [type, setType] = useState('');
     const [color, setColor] = useState("#aabbcc");
 
+    // Submit form
     const handleSubmit = (event) => {
         event.preventDefault();
         const formData = new FormData(formRef.current)
@@ -26,11 +28,11 @@ const CreatePet = ({ handleCreatePet }) => {
         resetValues(event);
     }
 
+    // Reset form
     const resetValues = (event) => {
         event.target.reset()
         setType('')
         setColor('#aabbcc')
-
     }
 
     return (
@@ -87,6 +89,5 @@ const CreatePet = ({ handleCreatePet }) => {
         </Container>
     )
 }
-
 
 export default CreatePet;
