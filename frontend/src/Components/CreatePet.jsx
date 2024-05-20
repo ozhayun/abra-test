@@ -58,6 +58,9 @@ const CreatePet = ({ handleCreatePet }) => {
                         value={type}
                         variant="outlined"
                         onChange={(e) => setType(e.target.value)}
+                        required
+                        label="type"
+                        sx={{ textAlign: 'left' }}
                     >
                         <MenuItem value="Dog">Dog</MenuItem>
                         <MenuItem value="Cat">Cat</MenuItem>

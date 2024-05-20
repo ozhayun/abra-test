@@ -59,9 +59,9 @@ app.MapPost("/api/pet", async (Pet newPet, IMongoCollection<Pet> collection) =>
     return Results.Created("Created new pet", newPet);
 });
 
-app.MapGet("/api/pets", () =>
+app.MapGet("/api/pets", async (IMongoCollection<Pet> collection) =>
 {
-    return "Petssss";
+    return await collection.Find(_ => true).ToListAsync();
 });
 
 app.Run();
